@@ -8,8 +8,8 @@
 
 #include "Window.hpp"
 
-#include <SDL2_image/SDL_image.h>
-#include <SDL2_ttf/SDL_ttf.h>
+#include <SDL_image.h>
+#include <SDL_ttf.h>
 
 Window::Window() : Window(NULL) {
 }

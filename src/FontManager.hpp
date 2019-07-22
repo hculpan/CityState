@@ -17,7 +17,7 @@
 #ifndef FontManager_hpp
 #define FontManager_hpp
 
-#include <SDL2_ttf/SDL_ttf.h>
+#include <SDL_ttf.h>
 
 #include <string>
 #include <map>

@@ -1,0 +1,55 @@
+{
+    "version": "2.0.0",
+    "command": "sh",
+    "type": "shell",
+    "args": [
+        "-c"
+    ],
+    "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+    },
+    "problemMatcher": [
+        "$gcc"
+    ],
+    "tasks": [
+        {
+            "label": "cmake",
+            "args": [
+                "cmake -G \"Unix Makefiles\" -DCMAKE_BUILD_TYPE=Debug ."
+            ]
+        },
+        {
+            "label": "clean",
+            "args": [
+                "make clean"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "make",
+            "args": [
+                "make -j 8"
+            ],
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "clang++ build active file",
+            "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin"
+            }
+        }
+    ]
+}

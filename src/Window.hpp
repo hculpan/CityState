@@ -12,7 +12,7 @@
 #include <iostream>
 #include <list>
 #include <SDL2/SDL.h>
-#include <SDL2_ttf/SDL_ttf.h>
+#include <SDL_ttf.h>
 
 class Window {
 protected:

@@ -7,11 +7,11 @@
 //
 
 //Using SDL and standard IO
-#include <SDL2/SDL.h>
-#include <SDL2_image/SDL_image.h>
-#include <SDL2_ttf/SDL_ttf.h>
-
 #include <iostream>
+
+#include <SDL2/SDL.h>
+#include <SDL_image.h>
+#include <SDL_ttf.h>
 
 #include "Game.hpp"
 #include "MainWindow.hpp"
